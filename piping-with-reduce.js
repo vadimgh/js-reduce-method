@@ -1,8 +1,8 @@
-const pipe = (...fns) => (initialValue) => fns.reduce((value, fn) => fn(value), initialValue);
+const pipe = (...fns) => initialValue => fns.reduce((value, fn) => fn(value), initialValue);
 
 const double = v => v * 2;
-const tripple = v => v * 3;
+const triple = v => v * 3;
 
-const multiply6 = pipe(double, tripple);
+const multiply6 = pipe(double, triple);
 
 console.log(multiply6(2));

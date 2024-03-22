@@ -10,7 +10,7 @@ const phrase = ['coding', 'is', 'fun'].reduce((phrase, word) => phrase + ' ' + w
 
 console.log(phrase);
 
-const phrase2 = ['coding', 'is', 'useful'].reduce((phrase, number) => phrase + ' ' + number);
+const phrase2 = ['coding', 'is', 'useful'].reduce((phrase, word) => phrase + ' ' + word);
 
 console.log(phrase2);
 
@@ -21,6 +21,7 @@ const phrase3 = words.reduce((phrase, word, idx, array) => {
   console.log(word);
   console.log(idx);
   console.log(array);
-  phrase =  phrase + ' ' + word;
-  return phrase;
-}, '');
+  return phrase + ' ' + word;
+});
+
+console.log(phrase3);
